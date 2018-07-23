@@ -1,5 +1,7 @@
 # Twitter
-
+apps.twitter.com
+"AnAppForAnnie"
+https://apps.twitter.com/app/15692569
 
 # first things first
 sudo pip3 install tweepy
