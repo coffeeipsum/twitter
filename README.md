@@ -1,6 +1,6 @@
 # Twitter
 apps.twitter.com
-"An
+"AnAppForAnnie"
 https://apps.twitter.com/app/15692569
 
 # first things first
@@ -30,3 +30,8 @@ operation in which items from one set are removed from another.
 
 # Rate limiting
 https://developer.twitter.com/en/docs/basics/rate-limiting
+
+# Lexical Diversity
+is a measure of how many unique words are used in a text.
+It can help to determine how rich (or otherwise) someone's use of language is.
+In social media it helps to determine how broadly a topic is being discussed.
