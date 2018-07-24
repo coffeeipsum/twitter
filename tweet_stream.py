@@ -3,6 +3,9 @@ import tweepy
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
+from twitter_hidingKeys import get_auth, twitter_api
+
+api = twitter_api
 
 
 CONSUMER_KEY = '8l2AuJLFehoqbikiPhHhfJpj8'
@@ -40,8 +43,7 @@ class MyStreamListener(StreamListener):
         return True
         
         
-auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+auth = get_auth()
 
 twitter_stream = Stream(auth, MyStreamListener())
 twitter_stream.filter(track=keyword_list)
