@@ -12,6 +12,23 @@ from tweepy import OAuthHandler
 
 etc.
 
+# IPython Interactive Shell // JUPYTER !
+
+STEP 1:
+sudo pip3 install ipython
+ [ to open it: ipython ]
+
+STEP 2:
+sudo pip3 install ipython --upgrade 
+ 
+ 
+# Jupyter Notebook
+
+STEP 3:
+sudo pip3 install jupyter
+ 
+STEP 4: (to access the Jupyter Notebook)
+jupyter notebook --ip=0.0.0.0 --port=8080  --no-browser
 
 # Where on Earth - IDs
 Yahoo has created ever growing lists of places on earth called WOE (`Where on Earth`) IDs
