@@ -1,6 +1,6 @@
 # Twitter
 apps.twitter.com
-"AnAppForAnnie"
+"An
 https://apps.twitter.com/app/15692569
 
 # first things first

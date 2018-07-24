@@ -6,6 +6,7 @@ from tweepy import OAuthHandler
 from collections import Counter
 from prettytable import PrettyTable
 
+
 CONSUMER_KEY = '8l2AuJLFehoqbikiPhHhfJpj8'
 CONSUMER_SECRET = 'HCG2Z6IdzrWms2R5VCTNaAGRTT0i51MTkzPPvQmRTg3dSWfL0S'
 OAUTH_TOKEN = '761230413209669636-tw2I4YVKRpPy6zWwSnQPiXlYhwOgpaE'
@@ -38,3 +39,16 @@ for label, data in (('Text', status_texts), ('Screen Name', screen_names), ('Wor
         [table.add_row(entry) for entry in counter.most_common()[:10]]
         table.align[label], table.align['Count'] = 'l', 'r'   # align the columns
         print(table)
+        
+
+def get_lexical_diversity(items):
+        return 1.0*len(set(items))/len(items)
+        
+def get_average_words(tweets):
+        total_words = sum([len(tweet.split()) for tweet in tweets])
+        return 1.0*total_words/len(tweets)
+        
+print("Average words: {0}".format(get_average_words(status_texts)))
+print("Word diversity: {0}".format(get_lexical_diversity(words)))
+print("Screen Name Diversity: {0}".format(get_lexical_diversity(screen_names)))
+print("Hastag Diversity: {0}".format(get_lexical_diversity(hashtags)))
